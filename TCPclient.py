@@ -1,15 +1,16 @@
 import socket
 
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host = socket.gethostname()
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #unlike UDP, uses SOCK_STREAM 
+host = socket.gethostname() #unlike UDP, puts host & port in separate variables
 port = 12345
 
-client.connect((host, port))
+client.connect((host, port)) #unlike UDP, connects to host & port
 
 outgoingMsg = input("Type something here: \n")
-client.send(outgoingMsg.encode('ascii'))
-response = client.recv(1024)
+client.send(outgoingMsg.encode('ascii')) #unlike UDP, uses send(msg)
 
-client.close()
+response = client.recv(1024) #same as UDP
+print(response.decode('ascii')) #same
 
-print(response.decode('ascii'))
+client.close() #same 
+
