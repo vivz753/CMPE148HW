@@ -1,3 +1,11 @@
+#AUTHOR: VIVIAN LEUNG
+#OCTOBER 24, 2017
+#CMPE148, PROF: ROD FATOOHI
+
+#TESTING INSTRUCTIONS:
+#!RUN THE SERVER BEFORE THE CLIENT!
+#IN TERMINAL, TYPE "python TCPserver.py" FOLLOWED BY "python TCPclient.py"
+#ENJOY!
 import socket
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #unlike UDP, uses SOCK_STREAM 

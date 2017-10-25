@@ -1,3 +1,11 @@
+#AUTHOR: VIVIAN LEUNG
+#OCTOBER 24, 2017
+#CMPE148, PROF: ROD FATOOHI
+
+#TESTING INSTRUCTIONS:
+#!RUN THE SERVER BEFORE THE CLIENT!
+#IN TERMINAL, TYPE "python UDPserver.py" FOLLOWED BY "python UDPclient.py"
+#ENJOY!
 import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #unlike TCP, uses SOCK_DGRAM not SOCK_STREAM
